@@ -20,7 +20,7 @@ This project analyzes **100 fictional startups** to:
 ## 🛠️ Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/startup-scoring.git
+   git clone https://github.com/alwaysashutosh/TASK-1-Startup-Health-Scoring-Model
    cd startup-scoring
    ```
 2. Install dependencies:
@@ -35,36 +35,6 @@ This project analyzes **100 fictional startups** to:
 | `Startup_Scoring_Dataset.csv`     | Core dataset with fictional startup metrics.                       |
 | `health_scoring.ipynb`            | Jupyter notebook to calculate health scores and visualize results. |
 | `startup_potential_predictor.pkl` | Pre-trained XGBoost model for predicting high-potential startups.  |
-
-
-## 🚀 Usage
-### 1. Startup Health Scoring
-Run the scoring model:
-```bash
-python scripts/calculate_scores.py
-```
-**Output:**
-- `startup_scores.csv` (Ranked startups + scores).
-- Visualizations (`score_distribution.png`, `top_10_startups.png`).
-
-### 2. Predictive Modeling
-Train ML models to identify high-potential startups:
-```bash
-python scripts/train_model.py
-```
-**Output:**
-- Model performance metrics (Accuracy, Precision, Recall).
-- Feature importance plots (`shap_summary.png`).
-
-### 3. Advanced Analysis
-- **Clustering (UMAP):**
-  ```bash
-  python scripts/cluster_startups.py
-  ```
-- **Bayesian Time-Series:**
-  ```bash
-  python scripts/forecast_valuation.py
-  ```
 
 ---
 
@@ -88,21 +58,6 @@ python scripts/train_model.py
 - **SHAP Analysis**: Found `monthly_active_users` most impactful.
 
 ---
-
-## 💡 Extensions
-1. **Interactive Dashboard:**
-   ```bash
-   python app/dashboard.py
-   ```
-2. **Synthetic Data Generation (GANs):**
-   ```bash
-   python scripts/generate_synthetic_data.py
-   ```
-
----
-
-## 📜 License
-MIT License. See [LICENSE](LICENSE).
 
 ---
 
