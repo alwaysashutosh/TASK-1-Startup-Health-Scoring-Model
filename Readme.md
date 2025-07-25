@@ -30,16 +30,12 @@ This project analyzes **100 fictional startups** to:
 
 ---
 
-## 📂 Files
-| File/Folder       | Description                                  |
-|-------------------|----------------------------------------------|
-| `notebooks/`      | Jupyter notebooks for analysis.              |
-| `data/`           | CSV dataset (`Startup_Scoring_Dataset.csv`). |
-| `models/`         | Saved ML models (XGBoost, etc.).             |
-| `outputs/`        | Visualizations (PNG, HTML dashboards).       |
-| `app/`            | (Optional) Flask web app for predictions.    |
+| File                              | Description                                                        |
+| --------------------------------- | ------------------------------------------------------------------ |
+| `Startup_Scoring_Dataset.csv`     | Core dataset with fictional startup metrics.                       |
+| `health_scoring.ipynb`            | Jupyter notebook to calculate health scores and visualize results. |
+| `startup_potential_predictor.pkl` | Pre-trained XGBoost model for predicting high-potential startups.  |
 
----
 
 ## 🚀 Usage
 ### 1. Startup Health Scoring
@@ -78,10 +74,6 @@ python scripts/train_model.py
 2. **Failure Risk**: 15% of startups had <6 months of runway.
 3. **Hidden Gems**: Clustering revealed undervalued startups with strong traction.
 
-### Sample Visualization
-![Startup Health Scores](outputs/score_distribution.png)
-
----
 
 ## 🔍 Methodology
 ### Scoring Formula
@@ -116,8 +108,5 @@ MIT License. See [LICENSE](LICENSE).
 
 ## 📬 Contact
 For questions or collaborations:
-- **Email**: your.email@example.com
-- **LinkedIn**: [Your Profile](https://linkedin.com/in/yourprofile)
-
-**Made with ❤️ for data-driven investing.** 🚀
-
+- **Email**: ashuranjan567@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/alwaysashutosh
